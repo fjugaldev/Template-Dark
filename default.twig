@@ -16,7 +16,11 @@
         <header class="navbar navbar-default navbar-fixed-top">
 
             <a class="navbar-brand" href="{{ baseUrl }}/">
-                {{ title|default('The title') }}
+                {% if title is defined %}
+                    {{ title|default('The title') }}
+                {% else %}
+                    <img src="{{path_logo}}">
+                {% endif }
                 <small class="hidden-xs hidden-sm">
                     {{ subTitle|default('This is the default subtitle!')|raw }}
                 </small>

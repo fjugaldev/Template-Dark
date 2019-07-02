@@ -5,8 +5,10 @@ github:
     user: CouscousPHP
     repo: Template-Dark
 
-title: Couscous template
+#title: Couscous template
+path_logo: "/assets/images/logos/puf-logo-white.png"
 subTitle: The dark template for Couscous.
+
 
 # The left menu bar
 menu:
